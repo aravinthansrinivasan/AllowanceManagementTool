@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="AllowanceManagementTool.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%-- BootStrap CSS--%>
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- DataTable CSS--%>
+    <link href="DataTables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%-- Custom CSS--%>
+    <link href="css/CustomStyleSheet.css" rel="stylesheet" />
+    <%-- JS for BootStrap--%>
+    <script src="Bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="Bootstrap/js/popper.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script> 
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light header">
+                <a class="navbar-brand" href="#">
+                    
+                    <h4>
+                    <img src="/Images/img1.gif" width="50" height="50" />
+                    Saggezza Employee Allowance Form
+                    </h4>
+                </a>
+            </nav>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer>
+            <p>@All rights reserved <a href="https://www.saggezza.com/">Saggezza India</a></p>
+        </footer>
+    </form>
+</body>
+</html>
